@@ -14,5 +14,7 @@ BE CAREFUL, AND FOR THE LOVE OF GOD DONT USE MY CODE TO LEARN PYTHON. I JUST STA
 
 # CHANGELOG
 ALPHA V0.0.2
+
 -Added ability to drag window
+
 -Added Weekend/Day Off message
