@@ -10,7 +10,7 @@ def create_text_box_app():
     title_bar.pack(expand=True, fill="x")
 
     # Title label
-    title_label = tk.Label(title_bar, text="BOSCO ALPHA V0.0.1", bg="darkgreen", fg="black", font=("Red October", 12))
+    title_label = tk.Label(title_bar, text="BOSCO ALPHA V0.0.2", bg="darkgreen", fg="black", font=("Red October", 12))
     title_label.pack(side="left", padx=5)
     root.configure(bg='black')
 
@@ -138,12 +138,17 @@ L  12:45AM
                      bg="black", # Background color
                      fg="white") # Foreground (text) color
 
+    label4C = tk.Label(root, text="NO SCHEDULE TODAY, YOUR WEEKEND HATH ARRIVED.",
+                     font=("Red October", 12), 
+                     padx=10, pady=0, 
+                     bg="black", # Background color
+                     fg="white")
+
     label5 = tk.Label(root, text=f"YOUR CURRENT CLASS ENDS IN {time_remaining}", 
                      font=("Red October", 12), 
                      padx=10, pady=0, 
                      bg="black", # Background color
                      fg="white") # Foreground (text) color
-
     
     # Pack the label into the window
     label.pack(padx=20, pady=0)
@@ -154,7 +159,43 @@ L  12:45AM
     if current_datetime.date().weekday() == 2:
         label4B.pack(padx=20, pady=0)
     else:
-        label4A.pack(padx=20, pady=0)
+        if current_datetime.date().weekday() == 4 or 5:
+            label4C.pack(padx=20, pady=0)
+        else:
+            label4A.pack(padx=20, pady=0)
+
+
+
+    x_axis = None
+    y_axis = None
+    # bind title bar motion to the move window function
+
+    xwin = root.winfo_x()
+    ywin = root.winfo_y()
+
+    def get_pos(event):
+
+        global xwin
+        global ywin
+
+        xwin = xwin - event.x
+        ywin = ywin - event.y
+
+    def move_window(event):
+        root.geometry(f'+{event.x_root - xwin}+{event.y_root - ywin}')
+
+    def change_on_hovering(event):
+        close_button['bg'] = 'red'
+    
+    def return_to_normal_state(event):
+       close_button['bg'] = 'darkgreen'
+
+    title_bar.bind("<B1-Motion>", move_window)
+    title_bar.bind("<Button-1>", get_pos)
+    title_label.bind("<B1-Motion>", move_window)
+    title_label.bind("<Button-1>", get_pos)
+    close_button.bind('<Enter>', change_on_hovering)
+    close_button.bind('<Leave>', return_to_normal_state)
     # Start the Tkinter event loop
     root.mainloop()
 
