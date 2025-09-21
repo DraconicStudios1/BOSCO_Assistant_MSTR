@@ -12,15 +12,7 @@ Currently BOSCO has been developed and tested STRICTLY on Windows 11 devices, I 
 
 BE CAREFUL, AND FOR THE LOVE OF GOD DONT USE MY CODE TO LEARN PYTHON. I JUST STARTED THIS SHIT.
 
-
- #####  #     #    #    #     #  #####  ####### #       #######  #####  
-#     # #     #   # #   ##    # #     # #       #       #     # #     # 
-#       #     #  #   #  # #   # #       #       #       #     # #       
-#       ####### #     # #  #  # #  #### #####   #       #     # #  #### 
-#       #     # ####### #   # # #     # #       #       #     # #     # 
-#     # #     # #     # #    ## #     # #       #       #     # #     # 
- #####  #     # #     # #     #  #####  ####### ####### #######  #####  
-
+# CHANGELOG
 ALPHA V0.0.2
 -Added ability to drag window
 -Added Weekend/Day Off message
