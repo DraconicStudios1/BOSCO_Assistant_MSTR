@@ -10,7 +10,7 @@ def create_text_box_app():
     title_bar.pack(expand=True, fill="x")
 
     # Title label
-    title_label = tk.Label(title_bar, text="BOSCO ALPHA V0.0.2", bg="darkgreen", fg="black", font=("Red October", 12))
+    title_label = tk.Label(title_bar, text="BOSCO ALPHA V0.0.3", bg="darkgreen", fg="black", font=("Red October", 12))
     title_label.pack(side="left", padx=5)
     root.configure(bg='black')
 
