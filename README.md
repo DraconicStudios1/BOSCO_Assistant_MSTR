@@ -14,13 +14,15 @@ BE CAREFUL, AND FOR THE LOVE OF GOD DONT USE MY CODE TO LEARN PYTHON. I JUST STA
 
 # CHANGELOG
 
-#ALPHA V0.0.2
+You can find version changes below.
+
+# ALPHA V0.0.2
 
 -Added ability to drag window
 
 -Added Weekend/Day Off message
 
-#ALPHA V0.0.3
+# ALPHA V0.0.3
 
 -Fixed issue where weekend message showed on weekdays
 
