@@ -156,13 +156,14 @@ L  12:45AM
     label2.pack(padx=20, pady=0)
     label5.pack(padx=20, pady=0)
     label3.pack(padx=20, pady=0)
-    if current_datetime.date().weekday() == 2:
-        label4B.pack(padx=20, pady=0)
+    if current_datetime.date().weekday() == 4 or current_datetime.date().weekday() == 5:
+        label4C.pack(padx=20, pady=0)
     else:
-        if current_datetime.date().weekday() == 4 or 5:
-            label4C.pack(padx=20, pady=0)
+        if current_datetime.date().weekday() == 2:
+            label4B.pack(padx=20, pady=0)
         else:
             label4A.pack(padx=20, pady=0)
+    
 
 
 
