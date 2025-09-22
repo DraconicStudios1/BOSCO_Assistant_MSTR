@@ -13,8 +13,17 @@ Currently BOSCO has been developed and tested STRICTLY on Windows 11 devices, I 
 BE CAREFUL, AND FOR THE LOVE OF GOD DONT USE MY CODE TO LEARN PYTHON. I JUST STARTED THIS SHIT.
 
 # CHANGELOG
-ALPHA V0.0.2
+
+#ALPHA V0.0.2
 
 -Added ability to drag window
 
 -Added Weekend/Day Off message
+
+#ALPHA V0.0.3
+
+-Fixed issue where weekend message showed on weekdays
+
+-Added Format Example in ExampleScheduleChart.txt for 24hr clock
+
+-Renamed PythonApp1.py to BOSCO_ALPHA_V-0-0-3.py
