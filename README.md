@@ -17,6 +17,11 @@ BE CAREFUL, AND FOR THE LOVE OF GOD DONT USE MY CODE TO LEARN PYTHON. I JUST STA
 I have been trying to make the time_remaining value constantly update each second, but datetime.now() only runs once each time I run the application, and I have no clue why.
 I will be trying to make a seperate function to run the time and gather the current date and time outside of the existing function, but I have no way of making sure that this will work. Alpha V0.1.0 is under way.
 
+# DEVLOG 2
+
+IT WORKS! I GOT THE TIME UPDATING TO WORK! THAT TOOK ME SO LONG OH MY GOD!
+I will get it to update every second now.
+
 # CHANGELOG
 
 You can find version changes below.
