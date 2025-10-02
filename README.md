@@ -39,3 +39,11 @@ You can find version changes below.
 -Added Format Example in ExampleScheduleChart.txt for 24hr clock
 
 -Renamed PythonApp1.py to BOSCO_ALPHA_V-0-0-3.py
+
+# ALPHA V0.1.0 *MAJOR UPDATE*
+
+-Added ability to update the time_remaining value
+
+-Fixed issue where old debug prints were still active, the current one is active purposely
+
+-Fixed issue where time calculations were not different on the defined day with a different schedule
