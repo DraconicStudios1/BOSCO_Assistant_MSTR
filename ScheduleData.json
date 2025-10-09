@@ -1,0 +1,8 @@
+{
+  "WedTimesH": [9, 11, 12, 12, 13, 14, 15],
+  "MTTF-TimesH": [9, 10, 11, 12, 13, 14, 15],
+  "WedTimesM": [25, 10, 0, 45, 30, 20, 7],
+  "MTTF-TimesM": [25, 44, 41, 21, 13, 10, 7],
+  "WedSchedule": "1  9:25AM\n3  11:10AM\n4  12:00AM\nL  12:45AM\n5  1:30PM\n6  2:20PM\n7  3:07PM",
+  "MTTF-Schedule": "1  9:25AM\n3  10:44AM\n4  11:41AM\nL  12:21AM\n5  1:13PM\n6  2:10PM\n7  3:07PM"
+}
