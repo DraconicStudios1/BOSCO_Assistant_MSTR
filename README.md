@@ -47,3 +47,12 @@ You can find version changes below.
 -Fixed issue where old debug prints were still active, the current one is active purposely
 
 -Fixed issue where time calculations were not different on the defined day with a different schedule
+
+# ALPHA V0.1.1
+
+-Added JSON Config for Schedule data
+
+KNOWN BUGS FOR V0.1.1
+-
+
+-Bug #1: You have to manually refresh the time until it shows correctly, I dont know how to fix this so wait for a while lol
