@@ -1,4 +1,4 @@
-BOSCO Assistant ALPHA
+# BOSCO Assistant ALPHA
 
 Currently BOSCO doesn't stand for anything, and only contains basic functions to tell your local time, date and the time until a set of specified hours/minutes
 
@@ -12,12 +12,14 @@ Currently BOSCO has been developed and tested STRICTLY on Windows 11 devices, I 
 
 BE CAREFUL, AND FOR THE LOVE OF GOD DONT USE MY CODE TO LEARN PYTHON. I JUST STARTED THIS SHIT.
 
-# DEVLOG 1
+DEVLOG 1
+-
 
 I have been trying to make the time_remaining value constantly update each second, but datetime.now() only runs once each time I run the application, and I have no clue why.
 I will be trying to make a seperate function to run the time and gather the current date and time outside of the existing function, but I have no way of making sure that this will work. Alpha V0.1.0 is under way.
 
-# DEVLOG 2
+DEVLOG 2
+-
 
 IT WORKS! I GOT THE TIME UPDATING TO WORK! THAT TOOK ME SO LONG OH MY GOD!
 I will get it to update every second now.
@@ -26,13 +28,15 @@ I will get it to update every second now.
 
 You can find version changes below.
 
-# ALPHA V0.0.2
+ALPHA V0.0.2
+-
 
 -Added ability to drag window
 
 -Added Weekend/Day Off message
 
-# ALPHA V0.0.3
+ALPHA V0.0.3
+-
 
 -Fixed issue where weekend message showed on weekdays
 
@@ -40,7 +44,8 @@ You can find version changes below.
 
 -Renamed PythonApp1.py to BOSCO_ALPHA_V-0-0-3.py
 
-# ALPHA V0.1.0 *MAJOR UPDATE*
+ALPHA V0.1.0 *MAJOR UPDATE*
+-
 
 -Added ability to update the time_remaining value
 
@@ -48,11 +53,10 @@ You can find version changes below.
 
 -Fixed issue where time calculations were not different on the defined day with a different schedule
 
-# ALPHA V0.1.1
+ALPHA V0.1.1
+-
 
 -Added JSON Config for Schedule data
 
 KNOWN BUGS FOR V0.1.1
--
-
 -Bug #1: You have to manually refresh the time until it shows correctly, I dont know how to fix this so wait for a while lol
