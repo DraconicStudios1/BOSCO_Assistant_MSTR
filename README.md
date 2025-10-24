@@ -2,15 +2,11 @@
 
 Currently BOSCO doesn't stand for anything, and only contains basic functions to tell your local time, date and the time until a set of specified hours/minutes
 
-IF you change the time until timeset, you MUST use 24 hour timestamps. Nothing else works with the math.
+BOSCO Alpha is built using the Tkinter Python application backbone.
 
-You CANNOT use datetime.datetime.strftime string sets for the math. Trust me, I tried.
+Currently BOSCO has been developed and tested on Windows 11 and 10 devices, I have no clue if it works on any forms of Linux, earlier Windows versions, or MacOS. You are welcome to branch this repo and try to convert it if you so please.
 
-BOSCO is built using the Tkinter Python application backbone, and as such, looks like a Windows 95 application. If anyone knows how to fix that and actually use images for stuff, please contact me at: bluecolt08@gmail.com, Discord: dracstudios.
-
-Currently BOSCO has been developed and tested STRICTLY on Windows 11 devices, I have no clue if it works on any forms of Linux, earlier Windows versions, or MacOS. You are welcome to branch this repo and try to convert it if you so please.
-
-BE CAREFUL, AND FOR THE LOVE OF GOD DONT USE MY CODE TO LEARN PYTHON. I JUST STARTED THIS SHIT.
+BE CAREFUL, AND FOR THE LOVE OF GOD DONT USE MY CODE TO LEARN PYTHON.
 
 DEVLOG 1
 -
@@ -60,3 +56,17 @@ ALPHA V0.1.1
 
 KNOWN BUGS FOR V0.1.1
 -Bug #1: You have to manually refresh the time until it shows correctly, I dont know how to fix this so wait for a while lol
+
+# ALPHA 0.2.0, END OF ALPHA
+
+-Major graphical overhaul, including a new title bar, buttons, and an app border.
+
+-Major bug fixes with how schedules are displayed
+
+-All Images must be kept in the same folder you are starting this in.
+
+# END OF ALPHA NOTE
+
+This was a wonderful project for me to use to learn python and tkinter and PIL image embedding, the next version will NOT use Tkinter, due to its inability to natively support transparent images as well as general clunky-ness
+
+Stay tuned for BOSCO Beta!
