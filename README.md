@@ -12,3 +12,6 @@ I will be embedding a Text To Speech engine into BOSCO to use the outputs from t
 - Added Background RGBA value sliders
 - Added Built-In font options
   - YOU CANNOT SELECT OR UPLOAD THEM MANUALLY YET, YOU CURRENTLY HAVE TO EDIT THE .kv FILE
+
+***BETA V0.0.2***
+- Added Background Reset Button
