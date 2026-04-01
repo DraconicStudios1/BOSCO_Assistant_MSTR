@@ -1,6 +1,7 @@
 from kivy.core.window import Window
 from kivy.app import App
 from kivy.uix.widget import Widget
+from kivy.uix.slider import Slider
 from kivy.properties import (
     NumericProperty, ReferenceListProperty, ObjectProperty
 )
@@ -14,7 +15,7 @@ GrnVal = 0
 BluVal = 0
 AlpVal = 0
 
-class timeManager(Widget):
+class CustomizationScreen(Widget):
     def on_Rslider_change(self, instance, value):
         global RedVal
         RedVal = value
@@ -27,12 +28,14 @@ class timeManager(Widget):
     def on_Aslider_change(self, instance, value):
         global AlpVal
         AlpVal = value
+    def reset_background(self, dt):
+        Window.clearcolor = 0, 0, 0, 0
 
 
 class BOSCO_BetaApp(App):
     def build(self):
         self.event = Clock.schedule_interval(self.update_background, 0.1)
-        return timeManager()
+        return CustomizationScreen()
 
     def update_background(self, dt):
         global RedVal
