@@ -1,0 +1,72 @@
+#:kivy 1.0.9
+
+<MySlider@Slider>:
+    # Set the cursor size to 20x20 pixels (adjust as needed)
+    cursor_size: 20, 20
+    # Optional: adjust padding if your new cursor size requires it
+    # If the cursor is smaller, default padding (16sp) is usually fine.
+    # If the cursor is larger, you might need to increase padding to avoid it going out of bounds.
+    # padding: 10sp 
+
+<timeManager>:    
+    canvas:
+        Color:
+            rgba: 0, 0, 1, 1
+
+    Label:
+        text: "CUSTOMIZATION:"
+        pos: (0, 0)
+        font_name: 'Fonts/Red October'
+
+    MySlider:
+        id: redSlider
+        min: 0
+        max: 1
+        step: 0.1
+        orientation: 'horizontal'
+        pos: (100, 0)
+        cursor_size: 20, 20
+        on_value: root.on_Rslider_change(self, self.value)
+
+    MySlider:
+        id: grnSlider
+        min: 0
+        max: 1
+        step: 0.1
+        orientation: 'horizontal'
+        pos: (200, 0)
+        on_value: root.on_Gslider_change(self, self.value)
+
+    MySlider:
+        id: bluSlider
+        min: 0
+        max: 1
+        step: 0.1
+        orientation: 'horizontal'
+        pos: (300, 0)
+        on_value: root.on_Bslider_change(self, self.value)
+
+    MySlider:
+        id: alpSlider
+        min: 0
+        max: 1
+        step: 0.1
+        orientation: 'horizontal'
+        pos: (400, 0)
+        on_value: root.on_Aslider_change(self, self.value)
+
+    Label:
+        text: str(redSlider.value)
+        pos: (100, 10)
+
+    Label:
+        text: str(grnSlider.value)
+        pos: (200, 10)
+
+    Label:
+        text: str(bluSlider.value)
+        pos: (300, 10)
+
+    Label:
+        text: str(alpSlider.value)
+        pos: (400, 10)
