@@ -6,17 +6,30 @@
     # Optional: adjust padding if your new cursor size requires it
     # If the cursor is smaller, default padding (16sp) is usually fine.
     # If the cursor is larger, you might need to increase padding to avoid it going out of bounds.
-    # padding: 10sp 
+    padding: 10
 
-<timeManager>:    
+<CustomizationScreen>:    
     canvas:
         Color:
-            rgba: 0, 0, 1, 1
+            rgba: 0, 0, 0, 1
 
     Label:
         text: "CUSTOMIZATION:"
         pos: (0, 0)
         font_name: 'Fonts/Red October'
+        color: 0.5, 0, 0, 1
+
+    Button:
+        text:"RESET"
+        pos: (5, 2)
+        size: 70, 10
+        font_name: 'Fonts/Red October-Fat'
+        background_color: 1, 0, 1, 1
+        on_press: root.reset_background(self)
+        on_press: redSlider.value = 0.0
+        on_press: grnSlider.value = 0.0
+        on_press: bluSlider.value = 0.0
+        on_press: alpSlider.value = 0.0
 
     MySlider:
         id: redSlider
